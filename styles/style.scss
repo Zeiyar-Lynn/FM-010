@@ -73,7 +73,7 @@ main {
       box-shadow: 0 4px 3px hsl(171, 61%, 35%);
    }
 
-   #btn-2{
+   .btn-2{
       margin-top: 1rem;
       background-color: var(--clr-light-blue);
       box-shadow: 0 4px 3px hsl(233, 51%, 48%);
@@ -83,7 +83,7 @@ main {
       background-color: hsl(172, 66%, 63%);
    }
 
-   #btn-2:hover {
+   .btn-2:hover {
       background-color: hsl(233, 92%, 76%);
    }
 }
@@ -279,7 +279,7 @@ footer {
          font-size: 1.2rem;
       }
    
-      #btn-2{
+      .btn-2{
          margin-top: 0;
       }
    }

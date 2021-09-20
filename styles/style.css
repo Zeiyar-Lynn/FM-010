@@ -72,7 +72,7 @@ main {
           box-shadow: 0 4px 3px #23907f;
 }
 
-.sct-1 #btn-2, .sct-6 #btn-2 {
+.sct-1 .btn-2, .sct-6 .btn-2 {
   margin-top: 1rem;
   background-color: var(--clr-light-blue);
   -webkit-box-shadow: 0 4px 3px #3c4bb9;
@@ -83,7 +83,7 @@ main {
   background-color: #62dfce;
 }
 
-.sct-1 #btn-2:hover, .sct-6 #btn-2:hover {
+.sct-1 .btn-2:hover, .sct-6 .btn-2:hover {
   background-color: #8997fa;
 }
 
@@ -248,7 +248,7 @@ footer a:hover {
     padding-inline: 2.5rem;
     font-size: 1.2rem;
   }
-  .sct-1 #btn-2, .sct-6 #btn-2 {
+  .sct-1 .btn-2, .sct-6 .btn-2 {
     margin-top: 0;
   }
   footer .more-info {
