@@ -1,6 +1,7 @@
 Clipboard landing Page challenge from Frontend mentor
 
 Tech Stacks:
+
   HTML
   CSS
   SCSS
