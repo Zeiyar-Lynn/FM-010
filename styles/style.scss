@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+   margin: 0;
+   font-family: "bai jamjuree", sans-serif;
+   text-align: center;
+}
+
+:root {
+   --clr-light-blue: hsl(233, 100%, 69%);
+   --clr-strong-cyan: hsl(171, 66%, 44%);
+   --clr-dark-greyish-blue: hsl(210, 10%, 33%);
+   --clr-greyish-blue: hsl(201, 11%, 66%);
+}
+
+p {
+   font-size: 1rem;
+   margin-top: .7rem;
+   color: var(--clr-greyish-blue);
+}
+
+a {
+   text-decoration: none;
+   font-weight: 600;
+}
+
+img {
+   width: 100%;
+}
+
+h1, h2 {
+   color: var(--clr-dark-greyish-blue);
+}
+
+.container {
+   width: 80%;
+   max-width: 700px;
+   margin-inline: auto;
+}
+
+main {
+   padding-block: 7rem;
+   min-height: 100vh;
+   height: -webkit-fill-available;
+   background: url(../images/bg-header-mobile.png) no-repeat;
+   background-size: contain;
+}
+
+.sct + .sct {
+   margin-top: 7rem;
+}
+
+.sct-1, .sct-6 {
+   img {
+      margin-bottom: 3rem;
+      width: initial;
+   }
+
+   h1 {
+      font-size: 1.9rem;
+   }
+
+   .downloads {
+      margin-block: 4rem 2rem;
+   }
+
+   a {
+      display: block;
+      padding-block: .7rem;
+      background-color: var(--clr-strong-cyan);
+      color: #fff;
+      border-radius: 1.5rem;
+      box-shadow: 0 4px 3px hsl(171, 61%, 35%);
+   }
+
+   #btn-2{
+      margin-top: 1rem;
+      background-color: var(--clr-light-blue);
+      box-shadow: 0 4px 3px hsl(233, 51%, 48%);
+   }
+
+   a:hover {
+      background-color: hsl(172, 66%, 63%);
+   }
+
+   #btn-2:hover {
+      background-color: hsl(233, 92%, 76%);
+   }
+}
+
+.sct-2 {
+   > h2 {
+      padding-inline: 1.5rem;
+   }
+
+   > .container {
+      margin-bottom: 4rem;
+   }
+
+   .asd {
+      margin-top: 3.5rem;
+
+      p {
+         margin-top: .7rem;
+      }
+   }
+}
+
+.sct-3 {
+   #image-3 {
+      width: 110%;
+      margin-left: -5%;
+      margin-block: 3.5rem -4rem;
+   }
+}
+
+.sct-4 {
+   img {
+      width: initial;
+   }
+
+   .tools {
+      margin-top: 5rem;
+   }
+
+   .tool + .tool {
+      margin-top: 3rem;
+   }
+
+   h3 {
+      margin-top: 2.5rem;
+   }
+}
+
+.sct-5 {
+   img {
+      width: 130px;
+   }
+
+   .client {
+      margin-top: 4rem;
+   }
+}
+
+footer {
+   padding-block: 2.5rem;
+   background-color: hsl(0, 0%, 94%);
+
+   img {
+      width: 50px;
+   }
+
+   .more-info{
+      list-style-type: none;
+      padding-left: 0;
+      margin-block: 1.5rem 2rem;
+   }
+
+   li + li {
+      margin-top: 1rem;
+   }
+
+   a + a{
+      margin-left: 1rem;
+   }
+
+   a {
+      color:  var(--clr-dark-greyish-blue);
+   }
+
+   a:hover {
+      color: var(--clr-strong-cyan);
+   }
+}
+
+/* 700px */
+@media (min-width: 1200px) {
+   main {
+      background-image: url(../images/bg-header-desktop.png);
+   }
+   
+   .sct-1 h1 {
+      font-size: 2.5rem;
+   }
+
+   h2 {
+      font-size: 1.9rem;
+   }
+
+   p {
+      font-size: 1.15rem;
+      margin-top: 1.2rem;
+      line-height: 1.5;
+   }
+
+   .sct + .sct {
+      margin-top: 8rem;
+   }
+
+   .flex {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .sct-2 .container:nth-child(2){
+      max-width: 1000px;
+      
+      img {
+         width: 100%;
+      }
+
+      #image-1 {
+         width: 70%;
+         margin-left: -20%;
+      }
+      aside {
+         width: 40%;
+      }
+
+      h2, p {
+         text-align: start;
+      }
+   }
+
+   .sct-2 > .container {
+      margin-bottom: 5.5rem;
+   }
+
+   .sct-3 #image-3{
+      margin-top: 5rem;
+      width: 120%;
+      margin-left: -10%;
+   }
+
+   .ctr-ctr {
+      width: 90%;
+      max-width: 1250px;
+   }
+
+   .sct-4 {
+      .tool-icon {
+         height: 40px;
+      }
+
+      img {
+         height: 100%;
+      }
+
+      h3 {
+         font-size: 1.5rem;
+      }
+
+      .tools .tool {
+         margin-top: 0;
+         width: 33%;
+      }
+   }
+
+   .sct-5 {
+      img {
+         height: 100%;
+         width: initial;
+      }
+   
+      .client {
+         height: 50px;
+         margin-top: 0;
+      }
+   }
+
+   .sct-1, .sct-6 {
+      .downloads {
+         max-width: 550px;
+         margin-inline: auto;
+      }
+
+      a {
+         padding-inline: 2.5rem;
+         font-size: 1.2rem;
+      }
+   
+      #btn-2{
+         margin-top: 0;
+      }
+   }
+
+   footer {
+      .more-info{
+         margin: 0;
+         flex-flow: column wrap;
+         height: 4rem;
+         margin-inline: 9rem auto;
+      }
+
+      .more-info li {
+         margin: 0;
+         align-self: flex-start;
+      }
+
+      li:nth-child(n+3){
+         margin-left: 6rem;
+      }
+
+      li:nth-child(2n) {
+         margin-top: .8rem;
+      }
+
+      a {
+         font-size: 1.2rem;
+      }
+   }
+}
